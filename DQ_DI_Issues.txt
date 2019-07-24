@@ -1,0 +1,22 @@
+Data Quality issues:
+1061 records don't have a price out of 20000
+one of the record has a price value of 77777777 which is dubious
+26 records don't have a model
+4 records don't have Make year
+7 records have integer value and doesnt represent the year value
+812 records don't have colour
+2250 records don't have milage value
+184 records doesn't have Mileage type
+338 records doesn't have engine_cc
+61 records doesn't have body_type
+174 records doesn't have fuel_type
+467 records doesn't have transmission
+2989 records doesn't have a value for doors
+Data in Mileagetype has 2 values representing the same attribute(ie., Kilometers, Kms)
+MilageType has numeric values which should be either Kilometers or Miles
+
+Observation: The above mentioned above data quality issues will impact reporting as these values will be classified under null.
+
+Data Integrity Issues:
+Model has 3 different datatypes Numeric, Date, String.
+Milagetype has 2 different datatypes Numeric & String.
